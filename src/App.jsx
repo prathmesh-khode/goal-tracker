@@ -1,3 +1,5 @@
+import { Analytics as VercelAnalytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import { Toaster } from 'react-hot-toast';
 import { AuthProvider, useAuth } from './contexts/AuthContext';
@@ -74,6 +76,8 @@ export default function App() {
       <AuthProvider>
         <Toaster position="top-right" toastOptions={{ duration: 3500, style: { fontSize: '13px' } }} />
         <AppRoutes />
+        <VercelAnalytics />
+        <SpeedInsights />
       </AuthProvider>
     </Router>
   );
