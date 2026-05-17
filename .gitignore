@@ -1,4 +1,38 @@
+# ==========================================
+# Dependencies
+# ==========================================
+node_modules/
+
+# ==========================================
+# Build output
+# ==========================================
+dist/
+dist-ssr/
+build/
+
+# ==========================================
+# Environment variables (contains secrets)
+# ==========================================
+.env
+.env.local
+.env.development
+.env.development.local
+.env.test
+.env.test.local
+.env.production
+.env.production.local
+
+# Keep template file tracked
+!.env.example
+
+# ==========================================
+# Vercel
+# ==========================================
+.vercel/
+
+# ==========================================
 # Logs
+# ==========================================
 logs
 *.log
 npm-debug.log*
@@ -7,18 +41,37 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
+# ==========================================
+# Coverage and cache
+# ==========================================
+coverage/
+.vite/
+.cache/
+.parcel-cache/
+.eslintcache
+
+# ==========================================
+# Misc local files
+# ==========================================
 *.local
 
+# ==========================================
 # Editor directories and files
+# ==========================================
 .vscode/*
 !.vscode/extensions.json
-.idea
-.DS_Store
+.idea/
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
+*.swp
+*.swo
+
+# ==========================================
+# Operating system files
+# ==========================================
+.DS_Store
+Thumbs.db
+desktop.ini
