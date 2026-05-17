@@ -4,7 +4,7 @@ A full-stack performance management portal designed to streamline goal setting, 
 
 ## 🌐 Live Demo
 
-https://goal-tracker-rho-drab.vercel.app
+https://goal-tracker-apkk8psju-prathmesh-khodes-projects.vercel.app/login
 
 ---
 
